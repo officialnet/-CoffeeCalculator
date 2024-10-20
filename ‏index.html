@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة القهوة V60</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>حاسبة معايير القهوة V60</h1>
+        <label for="coffeeAmount">كمية البن (جرام):</label><br>
+        <input type="number" id="coffeeAmount" placeholder="أدخل كمية البن"><br>
+        
+        <label for="type">نوع القهوة:</label><br>
+        <select id="type">
+            <option value="hot">قهوة حارة</option>
+            <option value="iced">قهوة باردة</option>
+        </select><br>
+
+        <button onclick="calculate()">احسب</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
